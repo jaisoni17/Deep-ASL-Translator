@@ -39,9 +39,9 @@ def experiment_random_agent(model_name='Random Model'):
 agents = ['random', 'bias', 'conv']
 
 if len(sys.argv) != 2:
-    print 'Incorrect number of parameters'
-    print 'Run python experiments.py agent'
-    print 'Choose any of the tree agents ' + str(agents)
+    print('Incorrect number of parameters')
+    print('Run python experiments.py agent')
+    print('Choose any of the tree agents ' + str(agents))
     sys.exit()
 
 chosen_agent = sys.argv[1]
@@ -53,9 +53,9 @@ elif chosen_agent == agents[1]:
 elif chosen_agent == agents[2]:
     experiment_conv()
 else:
-    print 'Unknown Agent'
-    print 'Run python experiments.py agent'
-    print 'Choose any of the tree agents ' + str(agents)
+    print('Unknown Agent')
+    print('Run python experiments.py agent')
+    print('Choose any of the tree agents ' + str(agents))
 
 
 # experiment_bias()
