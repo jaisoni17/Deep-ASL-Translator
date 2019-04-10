@@ -47,7 +47,10 @@ if len(sys.argv) != 2:
 chosen_agent = sys.argv[1]
 
 if chosen_agent == agents[0]:
-    experiment_random_agent()
+    try:
+        experiment_random_agent()
+    except ValueError:
+        pass
 elif chosen_agent == agents[1]:
     experiment_bias()
 elif chosen_agent == agents[2]:
